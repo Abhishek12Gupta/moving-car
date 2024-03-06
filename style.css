@@ -1,0 +1,161 @@
+
+body{
+    margin: 0%;
+    overflow: hidden;
+    padding: 0%;
+}
+
+#sky{
+    position: fixed;
+    width: 100vw;
+    height: 70vh;
+}
+#city1{
+    width: 100vw;
+    position: absolute;
+    height: 40vh;
+    top: 30.5%;
+    left: -100%;
+}
+#city2{
+    width: 100vw;
+    position: absolute;
+    height: 40vh;
+    top: 30.5%;
+    left: 0%;
+}
+
+#track1{
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    top: 70%;
+    left: -100%;
+}
+#track2{
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    top: 70%;
+    left: 0%;
+}
+#car_body{
+    position: fixed;
+    height: 90px;
+    top: 70%;
+    left: 40%;
+}
+#car_wheel_left{
+    position: fixed;
+    height: 70px;
+    top: 75%;
+    left: 42.5%;
+}
+#car_wheel_right{
+    position: fixed;
+    height: 70px;
+    top: 75%;
+    left: 55%;
+}
+
+@keyframes car_body_animation {
+    from
+    {
+        transform: translateY(0%);
+    }
+    to
+    {
+        transform: translateY(3%);
+    }
+}
+
+
+@keyframes road1
+{
+    from
+    {
+        left: -100%;
+    }
+    to
+    {
+        left: 0%;
+    }
+}
+@keyframes road2
+{
+    from
+    {
+        left: 0%;
+    }
+    to
+    {
+        left: 100%;
+    }
+}
+
+@keyframes city1
+{
+    from
+    {
+        left: -100%;
+    }
+    to
+    {
+        left: 0%;
+    }
+}
+@keyframes city2
+{
+    from
+    {
+        left: 0%;
+    }
+    to
+    {
+        left: 100%;
+    }
+}
+
+@keyframes wheel
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+#start{
+    position: absolute;
+    height: 50px;
+    width: 120px;
+    border: solid 3px floralwhite;
+    border-radius: 20px;
+    top: 90%;
+    background-color: darkgreen;
+    color: floralwhite;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+#stop{
+    position: absolute;
+    height: 50px;
+    width: 120px;
+    border: solid 3px floralwhite;
+    border-radius: 20px;
+    top: 90%;
+    left: 15%;
+    background-color: tomato;
+    color: floralwhite;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+
